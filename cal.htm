@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcultor</title>
+    <link rel="stylesheet" href="cal.css">
+    <script src="cal.js"></script>
+</head>
+
+<body>
+    <h1>My Calculator</h1>
+
+
+    <table id="main_cal">
+
+
+        <td colspan="4">
+            <input class="cal_screen" type="text">
+        </td>
+
+
+
+        <tr class="cal_raw1">
+            <td><button class="cal_btn" onclick="appendToResult('1')">1</button></td>
+            <td><button class="cal_btn" onclick="appendToResult('2')">2</button></td>
+            <td><button class="cal_btn" onclick="appendToResult('3')">3</button></td>
+            <td><button class="cal_btn div" onclick="appendToResult('/')">/</button></td>
+        </tr>
+        <tr class="cal_raw2">
+            <td><button class="cal_btn" onclick="appendToResult('4')">4</button></td>
+            <td><button class="cal_btn" onclick="appendToResult('5')">5</button></td>
+            <td><button class="cal_btn" onclick="appendToResult('6')">6</button></td>
+            <td><button class="cal_btn mul" onclick="appendToResult('*')">*</button></td>
+
+        </tr>
+        <tr class="cal_raw3">
+            <td><button class="cal_btn" onclick="appendToResult('7')">7</button></td>
+            <td><button class="cal_btn" onclick="appendToResult('8')">8</button></td>
+            <td><button class="cal_btn" onclick="appendToResult('9')">9</button></td>
+            <td><button class="cal_btn addi" onclick="appendToResult('+')">+</button></td>
+        </tr>
+        <tr class="cal_raw4">
+            <td><button class="cal_btn" onclick="appendToResult('0')">0</button></td>
+            <td><button class="cal_btn equal" onclick="calculateResult()">=</button></td>
+            <td><button class="cal_btn dot" onclick="appendToResult('.')">.</button></td>
+            <td><button class="cal_btn sub" onclick="appendToResult('-')">-</button></td>
+
+
+        </tr>
+        <tr class="cal_raw5">
+            <td><button class="cal_btn" onclick="clearResult()">C</button></td>
+            <td><button class="cal_btn dot" onclick="appendToResult('%')">%</button></td>
+            <td><button class="cal_btn sub" onclick="appendToResult('Hii Good Morning')">GRT</button></td>
+            <td><button class="cal_btn sub" onclick="appendToResult('How are You?..')">ASK</button></td>
+
+
+        </tr>
+
+    </table>
+
+
+
+</body>
+
+</html>
